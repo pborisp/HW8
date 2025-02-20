@@ -35,5 +35,24 @@ public class Main {
         }
         System.out.println("Минимальная сумма трат за месяц составила: " + minCost + " рублей");
         System.out.println("Максимальная сумма трат за месяц составила: " + maxCost + " рублей");
+        System.out.println();
+
+        // Задача №3
+        System.out.println("Задача №3:");
+        int[] cost3 = new int[5];
+        for (int i = 0; i < cost3.length; i++) {
+            cost3[i] = (int) (Math.random() * 100);
+            System.out.print(cost3[i] + " ");
+        }
+        System.out.println();
+        double averageValue;
+        int summ = 0;
+        for (int i = 0; i < cost3.length; i++) {
+            summ += cost3[i];
+        }
+        averageValue = summ;
+        averageValue /= cost3.length;
+        System.out.println("Средняя сумма трат за месяц составила: " + averageValue + " рублей");
+        System.out.println();
     }
 }
