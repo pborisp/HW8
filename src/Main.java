@@ -54,5 +54,20 @@ public class Main {
         averageValue /= cost3.length;
         System.out.println("Средняя сумма трат за месяц составила: " + averageValue + " рублей");
         System.out.println();
+
+        // Задача №4
+        System.out.println("Задача №4:");
+        char box;
+        char[] reversFullName = new char[] {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        int x = reversFullName.length - 1;
+        for (int i = 0; i < (reversFullName.length / 2); i++) {
+            box = reversFullName[i];
+            reversFullName[i] = reversFullName[x];
+            reversFullName[x] = box;
+            x--;
+        }
+        for (int i = 0; i < reversFullName.length; i++) {
+            System.out.print(reversFullName[i]);
+        }
     }
 }
